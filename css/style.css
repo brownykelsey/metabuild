@@ -1,0 +1,252 @@
+*{margin: 0; padding: 0; text-decoration: none; list-style: none; box-sizing: border-box;}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable.css');
+@font-face { font-family: 'GmarketSansBold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+
+
+a{text-decoration: none; color: black;}
+
+
+nav{width: 100%; height: 100px; background-color: rgb(255, 255, 255); padding: 12px; padding-left: 2em;  }
+nav .wrap{margin: 0 auto; width: 1640px;}
+nav img{width: 170px; float: left; }
+nav ul{text-align: center; float: right;}
+nav li{float: left; margin-right:4em; line-height: 76px; font-size: 1.2em; color: #3E3E3E; font-family: 'Montserrat';font-weight: 500;}
+nav li a:hover{color: #FF773B;}
+
+nav ul span{float: left; margin-right: 1.5em; border-radius: 40px; border: 1px solid gray; padding-left: 1.5em; padding-right: 1.5em; padding-top: 0.5em; padding-bottom: 0.5em; 
+margin-top: 1.2em;font-family: 'Montserrat', sans-serif; } 
+
+nav ul span i{ margin-left: 1.3em; columns: #3e3e3e; font-size: 0.8em;}
+
+
+nav ul span:hover{border: #FF773B solid 1px; color: #FF773B;}
+nav ul span a:hover{color: #FF773B;}
+
+
+/* 고정핀
+.fix_wrap{position: absolute; top: 700px;}
+
+.fix_wrap .msg{ position: fixed; width:80px; height: 80px; border-radius: 100px; float: left;   box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 30%);right: 50px; font-size: 30px; text-align: center;  line-height: 80px;}
+.fix_wrap .msg a i{color: #FF773B;}
+
+.fix_wrap .arr{ position: fixed; width: 80px; height: 80px; border-radius: 100px; float: left;   box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 30%);right: 50px;margin-top: 90px;  font-size: 30px; text-align: center;  line-height: 80px;}
+.fix_wrap .arr a i{color: #a4a4a4;}
+
+ */
+
+/* /메인배너 섹션 */
+.main_bnr{width: 100%; height: 55em; background-image: url(../img/main_bnr_01.png);;   background-repeat: no-repeat; background-position: center; background-color:#FF773B; position: relative;}
+
+.txt{ margin: 0 auto; width: 1640px; position: inherit; top: 38%; }
+.txt h2{ font-family: 'Montserrat', sans-serif; font-size: 4em; }
+.txt h2 span{color: white; }
+.txt h3{ font-family: 'Montserrat', sans-serif; font-size:2.5em; color: white; font-weight: 300; margin-top: 1em; letter-spacing: 1.5px; line-height: 1.4em;}
+
+.m_wrap_01{margin: 0 auto; width: 1640px;}
+.main_bnr a img{ position: absolute; left: 50%; bottom: 5%;}
+
+.main_bnr i{color: white; font-size: 3em; font-weight: thin;}
+
+
+#imgSlide{
+    width: 100%;
+    height: 55em;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-image: url(../img/main_bnr_01.png);
+    transition: background-image 1s;
+    position: relative;
+    overflow: hidden;
+}
+#imgSlide a{
+    position: absolute; 
+    top: 50%; 
+    transform: translateY(-50%);
+    display: block;
+    width: 30px; height: 30px;
+    /* transition:left 0.5s, right 0.5s, opacity 0.5s; */
+}
+
+
+#imgSlide a.prev{left:-30px; opacity: 0;}
+#imgSlide a.next{right:-30px; opacity: 0;}
+
+#imgSlide:hover a.prev{left: 10px; opacity: 1;}
+#imgSlide:hover a.next{right:10px; opacity: 1;}
+#imgSlide a img{
+    width: 100%;
+}
+
+.hidden{position: fixed; z-index: -1; opacity: 0;}
+
+
+
+
+
+/* /회사소개 링크 섹션-1 */
+
+.com_1{margin: 0 auto; text-align: center; height: 40em; position: relative; top: -55px;}
+/* .com_1 .txt{ top: 30%; } */
+.com_1 .txt h5{font-family: 'Montserrat', sans-serif;  font-size: 1em; color: #FF773B;}
+.com_1 .txt h1{font-family: 'Pretendard Variable'; font-weight: 700; font-size: 2.5em; color: black; line-height: 1.4em; margin-top: 25px;}
+.com_1 .txt h4{background-color: white;border-radius: 35px; width: 14em; padding: 1.2em 1.3em 1.2em 1.3em; color:#FF773B; border: 1px #FF773B solid; font-family: 'Pretendard Variable';font-size: 1em;  font-weight: 400;margin: 0 auto; margin-top: 4.2em;}
+.com_1 .txt h4:hover{background-color: #FF773B; color: white;}
+
+
+
+/* 제품소개 섹션 */
+
+.product { background-color: #1B2031; height: 1080px; margin: 0 auto; text-align: center;position: relative;}
+.product .wrap{margin: 0 auto; width: 1640px; height: 100px; position: inherit; }
+.product .wrap .wrapper{position: inherit; top: 180px;}
+
+.product .wrap h5{color: #FF773B; font-size: 1em; font-family: 'Montserrat', sans-serif;  }
+.product .wrap h1{ font-family: 'Pretendard Variable'; font-weight: 600; font-size: 2.5em; color: rgb(255, 255, 255); font-weight: 600; line-height: 1.2em; margin-top: 25px; text-align: center;}
+.product .wrap h1 span{font-weight: 300;}
+
+.product li{width: 380px; border: #FF773B solid 1px; height: 500px; margin-top: 5em; padding: 6em 4em 3em 4em; float: left;margin-right: 40px;}
+.product li:nth-child(4){margin-right: 0;}
+
+.product .wrap .wrapper h2{font-family: 'Montserrat', sans-serif;  font-size: 2em; color: #FF773B; text-align: center; font-weight:600;letter-spacing: 0.05em; }
+
+.product .wrap .wrapper h3 { font-weight: 400; color: white;font-family: 'Pretendard Variable'; font-weight: 400; margin-top: 0.5em; font-size: 1.3em; letter-spacing: 0.05em;}
+
+.product .wrap .wrapper p{ color: rgba(255, 255, 255, 0.70); margin-top: 3.5em; line-height: 1.8em; font-size: 1em; font-family: 'Pretendard Variable'; font-weight: 300;}
+
+.product .wrap h4{border: #FF773B solid 1px; border-radius: 35px; width: 14em; padding: 1.2em 1.3em 1.2em 1.3em; color:white; font-family: 'Pretendard Variable'; font-weight: 300; font-size: 1em;  margin: 0 auto; margin-top: 4.2em; color: #FF773B;margin-top: 3em; }
+
+.product li:hover{background-color: #FF773B; }
+.product .wrap .wrapper li:hover h2{color: white;}
+.product .wrap .wrapper li:hover h4{border: white solid 1px; color: white;}
+
+
+
+/* 뉴스영역 */
+
+.news{ height: 1080px; margin: 0 auto; text-align: center;position: relative;}
+.news .wrap{margin: 0 auto; width: 1640px; height: 1080px; position: inherit; }
+.news .wrap .wrapper{position: inherit; top: 180px; }
+
+.news .wrapper h5{color: #FF773B; font-size: 1em; font-family: 'Montserrat', sans-serif; text-align: center; }
+.news .wrapper h1{font-family: 'Pretendard Variable'; font-weight: 800; font-size: 2.5em; color: black;  line-height: 1.2em; margin-top: 25px; text-align: center;}
+
+.news li{width: 380px; height: 350px; margin-top: 5em; float: left;margin-right: 40px;}
+.news li:nth-child(4){margin-right: 0;}
+
+.news li img{width: 380px; border-radius: 15px;box-shadow: 0px 0px 8px #9B9B9B78; transition:transform 0.3s ease-in;}
+.news li a:hover img{transform: scale(1.03);}
+
+.news h2{font-size: 1.3em; text-align: left; line-height: 1.5em; margin-top: 1.8em;font-family: 'Pretendard Variable'; font-weight: 600;}
+.news p{color: #7A7A7A; font-size: 1em; text-align: left;font-family: 'Montserrat', sans-serif; line-height: 2.5em;}
+
+.news h2:hover{color: #FF773B;}
+
+.clearfix{clear: both;}
+
+.news  h4{background-color: white; color:#FF773B; border: 1px #FF773B solid ; border-radius: 35px; width: 14em; padding: 1.2em 1.3em 1.2em 1.3em; color:#FF773B; font-family: 'Pretendard Variable'; font-weight: 400;font-size: 1em;  text-align: center; margin: 0 auto; margin-top: 300px; }
+
+.news .wrap h4:hover{background-color: #FF773B; color: white;}
+
+
+
+
+
+/* 고객사 */
+.partner{ height: 700px; margin: 0 auto; text-align: center;position: relative; border-top: rgb(225, 225, 225) solid 0.5px;}
+.partner .wrap{margin: 0 auto; width: 1640px; height: 700px; position: inherit; transform: }
+.partner .wrap .wrapper{position: inherit; top: 180px; }
+
+
+.partner  h5{color: #FF773B; font-size: 1em; font-family: 'Montserrat', sans-serif; text-align: center;  margin-top: 150px;}
+.partner h1{ font-family: 'Pretendard Variable';font-size: 2.5em; color: black; font-weight: 800; line-height: 1.2em; margin-top: 25px; text-align: center;}
+
+.partner .wrapper{margin-top: -70px;}
+.partner .wrapper li{float: left; }
+
+.partner  h4{background-color: white; color:#FF773B; border: 1px #FF773B solid ; border-radius: 35px; width: 14em; padding: 1.2em 1.3em 1.2em 1.3em; color:#FF773B; font-family: 'Pretendard Variable'; font-size: 1em;  font-weight: 400; text-align: center; margin: 0 auto;  margin-top: 8em;}
+
+.partner .wrap h4:hover{background-color: #FF773B; color: white;}
+.clearfix{clear: both;}
+
+
+
+
+
+
+
+
+/* 하단버튼 */
+.btn{ height: 500px; margin: 0 auto; position: relative; border-top: rgb(225, 225, 225) solid 0.5px; margin-top: 200px; }
+.btn .wrap{margin: 0 auto; width: 1640px;}
+
+.left_btn{width: 800px; height: 200px;  background-image: url(../img/left_btn.svg); background-color: #FF773B; float: left; border-radius: 35px; margin-right: 40px; padding-left: 55px;  padding-right: 55px; padding-top: 40px; padding-bottom: 40px; position: relative;  margin-top: 150px; }
+
+.left_btn h5{ font-family: 'Montserrat', sans-serif; color: white; }
+.left_btn h4{font-family: 'Montserrat', sans-serif;  font-size: 2em; color: white; margin-top: 0.5em;}
+
+.left_btn a{border: white solid 1px; border-radius: 35px; width: 14em; padding:20px 50px 20px 50px;  color:white;font-family: 'Pretendard Variable'; font-size: 1em;  font-weight: 400;margin: 0 auto; margin-top: 4.2em; color: #ffffff;margin-top: 3em;  bottom: 40px;right: 55px; position: absolute; height: 57.39px; text-align: center;}
+
+.left_btn a:hover{ background-color: white; color: #FF773B; transition: all 0.6s;}
+
+.right_btn{width: 800px; height: 200px; background-image: url(../img/right_btn.svg); background-color: #1B2031; float: left; border-radius: 35px; padding-left: 55px;  padding-right: 55px; padding-top: 40px; padding-bottom: 40px; position: relative;  margin-top: 150px; }
+.right_btn h5{ font-family: 'Montserrat', sans-serif; color: white; }
+.right_btn h4{font-family: 'Montserrat', sans-serif;  font-size: 2em; color: white; margin-top: 0.5em;}
+
+.right_btn a{border: white solid 1px; border-radius: 35px; width: 14em; padding:20px 50px 20px 50px;  color:white;font-family: 'Pretendard Variable'; font-size: 1em;  font-weight: 400;margin: 0 auto; margin-top: 4.2em; color: #ffffff;margin-top: 3em;  bottom: 40px;right: 55px; position: absolute; height: 57.39px; text-align: center;}
+.right_btn a:hover{ background-color: white; color: #FF773B; transition: all 0.6s;}
+
+
+/* 푸터 */
+.footer{ background-color: #F5F5F5;}
+.footer .wrap{ height: 420px; background-color: #F5F5F5; margin: 0 auto; width: 1640px; position: relative;  }
+
+.footer .top_wrap{ position: absolute; height: 190px; border-bottom: #E5E5E5 solid 1px; width: 1640px;}
+
+.footer .top_wrap .left li{float: left; margin-right: 50px;  margin-top: 80px;}
+.footer .left li img{margin-right: 50px;}
+.footer .top_wrap .left li a{color: #999999; margin-top: 250px; line-height: 125px; font-family: 'Pretendard Variable';}
+.footer .top_wrap .left li a:hover{color: #FF773B; margin-top: 250px; line-height: 125px; }
+
+.footer .top_wrap .right{right: 0; position: inherit;}
+.footer .top_wrap .right li{float: left; margin-left: 40px; margin-top: 78px; line-height: 125px;}
+.footer .top_wrap .right li i{color: #999999; font-size: 1.2em;}
+.footer .top_wrap .right li:nth-child(1) i:hover{color: #4368FF; font-size: 1.2em;}
+.footer .top_wrap .right li:nth-child(2) i:hover{color: #E24283; font-size: 1.2em;}
+.footer .top_wrap .right li:nth-child(3) i:hover{color: #FF3D3D; font-size: 1.2em;}
+
+.footer .btm_wrap{position: absolute; top: 230px;}
+.footer .btm_wrap p{color: #999999; line-height: 1.7em;  font-family: 'Pretendard Variable'; font-weight: 300; font-size: 1em;}
+
+.footer .btm_wrap li{float: left; color: #999999; margin-right: 20px; line-height: 30px;}
+.footer .btm_wrap li span{font-family: 'Montserrat', sans-serif; }
+
+.footer .btm_wrap p{color: #999999; line-height: 3em; font-family: 'Montserrat', sans-serif; font-weight: 400; font-size: 0.9em; margin-top: 80px;  left: 0;}
+
+
+/* company 페이지 */
+.top_bnr{ width: 1920px; height: 980px; background-color: #172E67;  background-image: url(./img/company_bg.png);}
+.top_bnr .com_txt{margin: 0 auto; width: 1640px;  padding: 120px;}
+.top_bnr .com_txt h5{text-align: center; color: #FF773B; font-size: 1.2em;  font-family: 'Montserrat', sans-serif;}
+.top_bnr .com_txt h2{text-align: center; font-size: 4em; line-height: 1.3em; font-weight:900; margin-top: 20px; color: white; font-family: 'GmarketSansBold'} 
+
+.top_bnr .wrap{width: 1640px; margin: 0 auto;}
+.top_bnr .wrap li{width: 350px; height: 381px; background-color: #09194b86; border-radius: 20px; padding: 4em 1em 1em 1.5em; float: left; margin-right: 40px;}
+.top_bnr .wrap li:nth-child(4){margin-right: 0;}
+.top_bnr .wrap li:nth-child(1){margin-left: 40px;}
+.top_bnr .wrap h6{font-size: 1.2em; color: #ff773b; margin-bottom: 20px; font-family: 'Montserrat', sans-serif; font-weight: 500;}
+.top_bnr .wrap h2{font-size: 2.1em; line-height: 1.3em; color: white; margin-bottom: 70px; font-family: 'Pretendard Variable'; font-weight: 300;}
+.top_bnr .wrap h2 span{font-weight: 600;}
+.top_bnr .wrap li img{width:100px;}
+
+
+/* 제품라인 영역 */
+.structure h6{ color: #FF773B; font-size: 1em; font-family: 'Montserrat', sans-serif; text-align: center;  margin-top: 150px; }
+.structure h2{font-family: 'Pretendard Variable';font-size: 3.5em; color: black; font-weight: 800; line-height: 1.2em; margin-top: 25px; text-align: center; font-family: 'Montserrat', sans-serif;}
+.structure h2 span{color: #ff773b;}
+.structure h4{ color: #484848; font-size: 2.2em; text-align: center; font-weight: 400; line-height: 70px; font-family: 'Montserrat', sans-serif; margin-bottom: 3em;}
+.structure img {margin: 0 auto;}
+

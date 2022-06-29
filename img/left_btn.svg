@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="800" height="200" viewBox="0 0 800 200">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_64" data-name="사각형 64" width="800" height="200" rx="30" fill="none"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.293" y1="0.392" x2="1" y2="0.392" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ff9148" stop-opacity="0.4"/>
+      <stop offset="0.5" stop-color="#ff9148" stop-opacity="0"/>
+      <stop offset="1" stop-color="#ff9148" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.903" y1="1.713" x2="-0.097" y2="1.713" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ff9148" stop-opacity="0.4"/>
+      <stop offset="0.497" stop-color="#ff9148" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <g id="그룹_11773" data-name="그룹 11773" transform="translate(-140 -6975)">
+    <g id="그룹_11758" data-name="그룹 11758" transform="translate(140 6975)">
+      <rect id="사각형_64-2" data-name="사각형 64" width="800" height="200" rx="30" fill="#ff773b"/>
+      <g id="그룹_11757" data-name="그룹 11757">
+        <g id="그룹_11756" data-name="그룹 11756" clip-path="url(#clip-path)">
+          <circle id="타원_495" data-name="타원 495" cx="235" cy="235" r="235" transform="translate(690 -145.34) rotate(45)" opacity="0.64" fill="url(#linear-gradient)" style="mix-blend-mode: screen;isolation: isolate"/>
+          <circle id="타원_496" data-name="타원 496" cx="284" cy="284" r="284" transform="matrix(0.629, -0.777, 0.777, 0.629, -64.06, 398.982)" opacity="0.64" fill="url(#linear-gradient-2)" style="mix-blend-mode: screen;isolation: isolate"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
